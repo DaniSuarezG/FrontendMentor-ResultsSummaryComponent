@@ -1,0 +1,60 @@
+body {
+  border: 2px solid red;
+  margin: 0;
+  min-height: 99.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+}
+
+#container {
+  display: flex;
+  border: 2px solid orange;
+  width: 600px;
+  height: 450px;
+  margin-top: auto;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  align-items: center;
+  text-align: center;
+  flex-basis: 50%;
+  border-radius: 30px;
+  background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+
+#circle {
+  background: linear-gradient(0deg, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+  /* border: 2px solid red; */
+  width: 50%;
+  /* border-radius: 50%; */
+  /* shape-outside: circle(); */
+  clip-path: circle();
+}
+
+p #points {
+
+}
+
+#summary {
+  border: 2px solid red;
+  flex-basis: 50%;
+}
+
+footer {
+  margin-top: auto;
+  border: 2px solid green
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
