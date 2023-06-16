@@ -14,6 +14,7 @@ body {
   width: 600px;
   height: 450px;
   margin-top: auto;
+  box-sizing: border-box;
 }
 
 #result {
@@ -22,7 +23,9 @@ body {
   border: 2px solid black;
   align-items: center;
   text-align: center;
-  flex-basis: 50%;
+  /* flex-basis: 50%; */
+  /* flex: 1; */
+  /* box-sizing: border-box; */
   border-radius: 30px;
   background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
 }
@@ -41,8 +44,13 @@ p #points {
 }
 
 #summary {
+  display: flex;
+  flex-direction: column;
   border: 2px solid red;
-  flex-basis: 50%;
+  /* flex-basis: 50%; */
+  /* flex: 1; */
+  /* box-sizing: border-box; */
+  padding: 50px
 }
 
 footer {
