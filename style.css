@@ -12,10 +12,12 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   border: 2px solid orange;
-  width: 600px;
-  height: 450px;
+  width: 630px;
+  aspect-ratio: 1 / 0.70;
+  /* height: 440px; */
   margin-top: auto;
   /* box-sizing: border-box; */
+  font-family: 'Hanken Grotesk', sans-serif;
 }
 
 #result {
@@ -24,7 +26,7 @@ body {
   border: 2px solid black;
   align-items: center;
   text-align: center;
-  padding: 10px 0;
+  /* padding: 10px 0; */
   /* flex-basis: 50%; */
   /* flex: 1; */
   /* box-sizing: border-box; */
@@ -32,17 +34,49 @@ body {
   background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
 }
 
+#result #title {
+  margin: 30px 0;
+  color: hsl(247, 92%, 80%);
+  font-size: 20px;
+}
+
 #circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: linear-gradient(0deg, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
   /* border: 2px solid red; */
-  width: 50%;
+  width: 55%;
+  aspect-ratio: 1 / 1;
+  /* height: 148px; */
   /* border-radius: 50%; */
   /* shape-outside: circle(); */
   clip-path: circle();
 }
 
-p #points {
+#points {
+  margin: 0;
+  font-weight: 800;
+  font-size: 60px;
+  color: white;
+}
 
+#percentage {
+  margin: 0;
+  color: hsla(246, 100%, 76%, .7);
+}
+
+#congrats {
+  font-size: 30px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+#text {
+  width: 70%;
+  color: hsl(247, 92%, 80%);
+  font-size: 15px;
 }
 
 #summary {
