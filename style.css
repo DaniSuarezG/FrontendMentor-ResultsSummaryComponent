@@ -5,19 +5,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: hsl(30, 38%, 92%);
+  background-color: white;
 }
 
 #container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   border: 2px solid orange;
+  border-radius: 30px;
   width: 630px;
   aspect-ratio: 1 / 0.70;
   /* height: 440px; */
   margin-top: auto;
   /* box-sizing: border-box; */
   font-family: 'Hanken Grotesk', sans-serif;
+  box-shadow: 10px 10px 50px 0px #d9dce3;
 }
 
 #result {
@@ -83,6 +85,7 @@ body {
   display: flex;
   flex-direction: column;
   border: 2px solid red;
+  border-radius: 0 30px 30px 0;
   /* flex-basis: 50%; */
   /* flex: 1; */
   /* box-sizing: border-box; */
