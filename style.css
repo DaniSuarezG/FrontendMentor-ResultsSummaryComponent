@@ -11,7 +11,6 @@ body {
 #container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: 2px solid orange;
   border-radius: 30px;
   width: 630px;
   aspect-ratio: 1 / 0.70;
@@ -25,7 +24,6 @@ body {
 #result {
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
   align-items: center;
   text-align: center;
   /* padding: 10px 0; */
@@ -84,7 +82,6 @@ body {
 #summary {
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
   border-radius: 0 30px 30px 0;
   /* flex-basis: 50%; */
   /* flex: 1; */
@@ -92,9 +89,84 @@ body {
   padding: 10px 30px
 }
 
+#summary p{
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#cards {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#cards .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+#cards .box img {
+  margin-right: 10px;
+}
+
+#cards .box .category {
+  font-weight: 700;
+}
+
+#cards .box .scoreContainer {
+  font-weight: 700;
+}
+
+#cards .box .score {
+  color: hsl(224, 30%, 27%);
+}
+
+#cards .box .percentage {
+  color: hsl(241, 100%, 89%);
+}
+
+.boxReaction {
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.07);
+}
+
+.boxMemory {
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.07)
+}
+
+.boxVerbal {
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.07);
+}
+
+.boxVisual {
+  color: hsl(234, 85%, 45%);
+  background-color: hsl(234, 85%, 45%, 0.07);
+}
+
+#summary button {
+  height: 47px;
+  margin: 7% 0;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  background-color: hsl(224, 30%, 27%);
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 16px;
+}
+
+#summary button:hover {
+  background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  cursor: pointer;
+}
+
 footer {
   margin-top: auto;
-  border: 2px solid green
 }
 
 .attribution {
