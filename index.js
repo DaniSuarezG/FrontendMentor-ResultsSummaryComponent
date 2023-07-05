@@ -1,4 +1,10 @@
-import data from './data.json' assert { type: 'json' }
+// import * as data from './data.json' assert { type: 'json' }
+async function getData() {
+  return await fetch('./data.json')
+                    .then((response) => response.json())
+}
+
+let data = await getData()
 
 const cards = document.getElementById('cards')
 
