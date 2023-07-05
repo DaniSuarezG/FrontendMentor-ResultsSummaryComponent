@@ -37,6 +37,7 @@ body {
   margin: 30px 0;
   color: hsl(247, 92%, 80%);
   font-size: 20px;
+  font-weight: 700;
 }
 
 #circle {
@@ -67,6 +68,7 @@ body {
 
 #congrats {
   font-size: 30px;
+  font-weight: 700;
   color: white;
   margin-top: 30px;
   margin-bottom: 0;
@@ -76,6 +78,7 @@ body {
   width: 70%;
   color: hsl(247, 92%, 80%);
   font-size: 15px;
+  font-weight: 700;
 }
 
 #summary {
@@ -175,4 +178,44 @@ footer {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1440px) {
+  #container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 315px;
+  }
+
+  #result {
+    height: 300px;
+    border-radius: 0 0 30px 30px;
+  }
+
+  #result #title {
+    font-size: 15px;
+    margin: 20px 0;
+  }
+
+  #circle {
+    width: 37%;
+  }
+
+  #points {
+    font-size: 45px;
+  }
+
+  #percentage {
+    font-size: 14px;
+  }
+
+  #congrats {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  #text {
+    font-size: 13px;
+    margin-top: 10px;
+  }
 }
